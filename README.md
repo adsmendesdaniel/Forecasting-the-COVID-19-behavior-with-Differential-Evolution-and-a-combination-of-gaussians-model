@@ -10,7 +10,7 @@
  
  Desde que tenhamos dados o suficiente, é possível, facilmente, utilizar Evolução Diferencial para ajustar curvas/séries temporais provenientes de fenômenos físicos, por exemplo. Assim, podemos ajustar curvas geradas por fenômenos antropológicos como os relacionados ao COVID-19, desde que escolhamos um modelo matemáticos conveniente, que possa ser ajustado aos dados.
 
- Pelo Teorema do Limite Central, podemos encontrar que utilizar uma função de distribuição Gaussiana pode aproximar a solução de nosso problema já que variáveis aleatórias independentes podem estar gerando nosso conjunto de dados (na verdade, estas variáveis no caso da análise de dados de COVID-19 são tão independentes assim, logo, o ideal seria utlizar alguma função de distruibuição correspondente à uma Gaussiana Modificada). Apesar de não ser a melhor opção neste caso, podemos utilizar a sobreposição de dois pacotes gaussianos como função objetiva na solução de nosso problema de otimização com Evolução Diferencial. Assim, simplificadamente, podemos escrever:
+ Pelo Teorema do Central do Limite, podemos encontrar que utilizar uma função de distribuição Gaussiana pode aproximar a solução de nosso problema já que variáveis aleatórias independentes podem estar gerando nosso conjunto de dados (na verdade, estas variáveis no caso da análise de dados de COVID-19 são tão independentes assim, logo, o ideal seria utlizar alguma função de distruibuição correspondente à uma Gaussiana Modificada). Apesar de não ser a melhor opção neste caso, podemos utilizar a sobreposição de dois pacotes gaussianos como função objetiva na solução de nosso problema de otimização com Evolução Diferencial. Assim, simplificadamente, podemos escrever:
  
  *f(&alpha;<sub>1</sub>, &beta;<sub>1</sub>, &gamma;<sub>1</sub>, &alpha;<sub>2</sub>, &beta;<sub>2</sub>, &gamma;<sub>2</sub>) = &alpha;<sub>1</sub>exp[-(x-&beta;<sub>1</sub>)^2/2&gamma;<sub>1</sub>^2] + &alpha;<sub>2</sub>exp[-(x-&beta;<sub>2</sub>)^2/2&gamma;<sub>2</sub>^2]*
 
@@ -48,6 +48,8 @@
 
  Uma forma de tentarmos prever o comportamento da segunda onda de COVID-19 é analisando os casos e óbitos por Síndrome Respiratória Aguda Grave, já que devido à subnotificação de casos e mortes no Brasil, é possível tentar estimar, por exemplo, óbitos subnotificados por COVID-19 através da análise dos dados de SRAG.
 
+ Ajuste (Média dos parâmetros de 10 runs do algoritmo de ED):
+
  <p align="center">
  <img src="casos_srag_ajuste.png" align=middle/>
  </p>
@@ -59,19 +61,42 @@
  </p>
 
 ## Ajustando óbitos por SRAG:
-
+ 
+ Ajuste (Média dos parâmetros de 5 runs do algoritmo de ED):
+ 
  <p align="center">
  <img src="obitos_srag_ajuste.png" align=middle/>
  </p>
  
- Previsão dos próximos dias epidemiológicos (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Previsão dos próximos dias epidemiológicos (Média dos parâmetros de 5 runs do algoritmo de ED):
  
  <p align="center">
  <img src="obitos_srag_previsao.png" align=middle/>
  </p>
 
 ## Prevendo o pior momento da segunda onda de COVID-19 no Brasil:
+ 
+ Para tentarmos visualizar o comportamento do auge da segunda onda de COVID-19 no Brasil podemos plotar as curvas correspondentes às gaussianas combinadas dos ajustes anteriores de forma normalizada:
 
+ <p align="center">
+ <img src="normalizacoes.png" align=middle/>
+ </p>
+  
+  Em nosso modelo, o parâmetro &beta;<sub>i</sub> representa o centro do máximo de cada curva gaussiana, assim, podemos ver que, segundo nossa estimativa:
+  
+  - 13 de abril (aproximadamente) será o dia com mais casos de COVID-19 registrados na segunda onda;
+  - 12 de julho (aproximadamente) será o dia com mais óbitos por COVID-19 registrados na segunda onda;
+  - 20 de maio (aproximadamente) será o dia com mais óbitos por SRAG registrados na segunda onda;
+  - 20 de março (aproximadamente) será o dia com mais casos de SRAG registrados na segunda onda;
+  - Em média, 9 de maio (aproximadamente) será o "pior dia" da segunda onda, considerando todos os fatores anteriores.
+  
+  *OBS: Considerando 13 de março de 2020 como o primeiro dia epidemiológico do Brasil*
+  
+  ## Estas são boas previsões acerca da segunda onda de COVID-19 no Brasil?
+  
+  Não. O Teorema Central do Limite nos garante que a distribuição amostral, quando a amostra aumenta, se aproxima de uma distribuição normal, ou, distruibuição gaussiana. Dada a evolução dos pontos da série temporal proveniente dos dados gerados por fenômenos antropológicos e biológicos relacionados ao COVID-19, pode-se pensar que uma curva gaussina poderia ajustar muito bem estes pontos. Porém,  as variáveis do fenômeno que geram os respectivos dados não são independentes, desta forma, não podem ser aproximados facilmente por este tipo de função. Necessitaríamos de algo um pouco mais sofisticado, como uma gaussiana modificada, o que faria, por exemplo, que a curva ajustasse os pontos iniciais de nossos datasets, o que claramente não acontece em nosso casos, e pode ser visualizado nos gráficos.
+  
+  Outro aspecto a se atentar, é que talvez não tenhamos dados o suficiente da segunda onda para inferirmos um comportamento à longo prazo, principalmente nas previsões utilizando dados de SRAG, que parecem estar desatualizados e/ou subnotificados nos datasets investigados.
   
 ## Referências:
 
