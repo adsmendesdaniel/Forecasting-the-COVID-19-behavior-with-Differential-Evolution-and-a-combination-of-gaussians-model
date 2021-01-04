@@ -4,15 +4,27 @@
 
   Análise de datasets contendo séries temporais de casos e óbitos registrados de Covid-19 e casos e óbitos por SRAG (síndrome respiratória aguda grave) utilizando Evolução Diferencial e combinação de pacotes de onda gaussianos na previsão do comportamento da segunda onda de COVID-19 no Brasil.
 
-# Ajustando casos de COVID-19:
+## Sobre ED, Gaussianas e COVID-19:
 
-# Ajustando óbitos por COVID-19:
+ Evolução Diferencial é um algorítmo evolutivo simples da categoria de algorítmos meta-heurísticos, que através da criação de populações de soluções, suas seleções e recombinações, é capaz de obter um solução ótima ou aproximadamente ótima para um problema.
+ 
+ Desde que tenhamos dados o suficiente, é possível, facilmente, utilizar Evolução Diferencial para ajustar curvas/séries temporais provenientes de fenômenos físicos, por exemplo. Assim, podemos ajustar curvas geradas por fenômenos antropológicos como os relacionados ao COVID-19, desde que escolhamos um modelo matemáticos conveniente, que possa ser ajustado aos dados.
 
-# Ajustando casos de SRAG:
+ Pelo Teorema do Limite Central, podemos encontrar que utilizar uma função de distribuição Gaussiana pode aproximar a solução de nosso problema já que variáveis aleatórias independentes podem estar gerando nosso conjunto de dados (na verdade, estas variáveis no caso da análise de dados de COVID-19 são tão independentes assim, logo, o ideal seria utlizar alguma função de distruibuição correspondente à uma Gaussiana Modificada). Apesar de não ser a melhor opção neste caso, podemos utilizar a sobreposição de dois pacotes gaussianos como função objetiva na solução de nosso problema de otimização com Evolução Diferencial. Assim, simplificadamente, podemos escrever:
+ 
+ *f(&alpha;<sub>1</sub>, &beta;<sub>1</sub>, &gamma;<sub>1</sub>, &alpha;<sub>2</sub>, &beta;<sub>2</sub>, &gamma;<sub>2</sub>) = &alpha;<sub>1</sub>exp[-(x-&beta;<sub>1</sub>)^2/2&gamma;<sub>1</sub>^2] + &alpha;<sub>2</sub>exp[-(x-&beta;<sub>2</sub>)^2/2&gamma;<sub>2</sub>^2]*
 
-# Ajustando óbitos por SRAG:
+ E encontrar os parâmeros que melhor ajustam a curva do modelo aos devidos dados utilizando Evolução Diferencial como algoritmo de otimização.
 
+## Ajustando casos de COVID-19:
 
+## Ajustando óbitos por COVID-19:
+
+## Ajustando casos de SRAG:
+
+## Ajustando óbitos por SRAG:
+
+## Prevendo o pior momento da segunda onda de COVID-19 no Brasil:
 
 ## ETAPA 1: Visualizar os dados:
 
