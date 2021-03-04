@@ -18,16 +18,28 @@
 
 ## Ajustando casos de COVID-19:
  
- Ajuste (Média dos parâmetros de 20 runs do algoritmo de ED):
+ Ajuste feito em 03/01/2021 (Média dos parâmetros de 20 runs do algoritmo de ED):
  
  <p align="center">
  <img src="casos_covid_ajuste.png" align=middle/>
  </p>
  
- Previsão dos próximos dias epidemiológicos (Média dos parâmetros de 20 runs do algoritmo de ED):
+ Ajuste atualizado em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
+ 
+ <p align="center">
+ <img src="update_03_03_2021/casos_covid_ajuste_03_03_2021.png" align=middle/>
+ </p>
+ 
+ Previsão dos próximos dias epidemiológicos feita em 03/01/2021 (Média dos parâmetros de 20 runs do algoritmo de ED):
  
  <p align="center">
  <img src="casos_covid_previsao.png" align=middle/>
+ </p>
+ 
+ Previsão dos próximos dias epidemiológicos atualizada em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
+ 
+ <p align="center">
+ <img src="update_03_03_2021/casos_covid_previsao_03_03_2021.png" align=middle/>
  </p>
 
 ## Ajustando óbitos por COVID-19:
