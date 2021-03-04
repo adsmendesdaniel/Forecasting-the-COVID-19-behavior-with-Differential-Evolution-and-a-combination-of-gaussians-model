@@ -44,63 +44,118 @@
 
 ## Ajustando óbitos por COVID-19:
 
- Ajuste (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Ajuste feito em 03/01/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
  
  <p align="center">
  <img src="obitos_covid_ajuste.png" align=middle/>
  </p>
  
- Previsão dos próximos dias epidemiológicos (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Ajuste atualizado em 03/01/2021 (Média dos parâmetros de 20 runs do algoritmo de ED):
+ 
+ <p align="center">
+ <img src="update_03_03_2021/obitos_covid_ajuste_03_03_2021.png" align=middle/>
+ </p>
+ 
+ Previsão dos próximos dias epidemiológicos feita em 03/01/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
  
  <p align="center">
  <img src="obitos_covid_previsao.png" align=middle/>
+ </p>
+ 
+ Previsão dos próximos dias epidemiológicos atualizada em 03/01/2021 (Média dos parâmetros de 20 runs do algoritmo de ED):
+ 
+ <p align="center">
+ <img src="update_03_03_2021/obitos_covid_previsao_03_03_2021.png" align=middle/>
  </p>
 
 ## Ajustando casos de SRAG:
 
  Uma forma de tentarmos prever o comportamento da segunda onda de COVID-19 é analisando os casos e óbitos por Síndrome Respiratória Aguda Grave, já que devido à subnotificação de casos e mortes no Brasil, é possível tentar estimar, por exemplo, óbitos subnotificados por COVID-19 através da análise dos dados de SRAG.
 
- Ajuste (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Ajuste feito em 03/01/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
 
  <p align="center">
  <img src="casos_srag_ajuste.png" align=middle/>
  </p>
  
- Previsão dos próximos dias epidemiológicos (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Ajuste atualizado em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
+
+ <p align="center">
+ <img src="update_03_03_2021/casos_srag_ajuste_03_03_2021.png" align=middle/>
+ </p>
+ 
+ Previsão dos próximos dias epidemiológicos feita em 03/01/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
  
  <p align="center">
  <img src="casos_srag_previsao.png" align=middle/>
  </p>
+ 
+ Previsão dos próximos dias epidemiológicos atualizado em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
+ 
+ <p align="center">
+ <img src="update_03_03_2021/casos_srag_previsao_03_03_2021.png" align=middle/>
+ </p>
 
 ## Ajustando óbitos por SRAG:
  
- Ajuste (Média dos parâmetros de 5 runs do algoritmo de ED):
+ Ajuste feito em 03/01/2021 (Média dos parâmetros de 5 runs do algoritmo de ED):
  
  <p align="center">
  <img src="obitos_srag_ajuste.png" align=middle/>
  </p>
  
- Previsão dos próximos dias epidemiológicos (Média dos parâmetros de 5 runs do algoritmo de ED):
+ Ajuste atualizado em 03/03/2021 (Média dos parâmetros de 5 runs do algoritmo de ED):
+ 
+ <p align="center">
+ <img src="update_03_03_2021/obitos_srag_ajuste_03_03_2021.png" align=middle/>
+ </p>
+ 
+ Previsão dos próximos dias epidemiológicos feita em 03/01/2021 (Média dos parâmetros de 5 runs do algoritmo de ED):
  
  <p align="center">
  <img src="obitos_srag_previsao.png" align=middle/>
+ </p>
+
+ Previsão dos próximos dias epidemiológicos atualizada em 03/01/2021 (Média dos parâmetros de 5 runs do algoritmo de ED):
+ 
+ <p align="center">
+ <img src="update_03_03_2021/obitos_srag_previsao_03_03_2021.png" align=middle/>
  </p>
 
 ## Prevendo o pior momento da segunda onda de COVID-19 no Brasil:
  
  Para tentarmos visualizar o comportamento do auge da segunda onda de COVID-19 no Brasil podemos plotar as curvas correspondentes às gaussianas combinadas dos ajustes anteriores de forma normalizada:
 
+ Normalizações feitas em 03/01/2021:
+
  <p align="center">
  <img src="normalizacoes.png" align=middle/>
  </p>
   
+  Normalizações atualizadas em 03/03/2021:
+
+ <p align="center">
+ <img src="update_03_03_2021/normalizacoes_03_03_2021.png" align=middle/>
+ </p>
+  
   Em nosso modelo, o parâmetro &beta;<sub>i</sub> representa o centro do máximo de cada curva gaussiana, assim, podemos ver que, segundo nossa estimativa:
+  
+  Estimativas feitas em 03/03/2021:
   
   - 13 de abril (aproximadamente) será o dia com mais casos de COVID-19 registrados na segunda onda;
   - 12 de julho (aproximadamente) será o dia com mais óbitos por COVID-19 registrados na segunda onda;
-  - 20 de maio (aproximadamente) será o dia com mais óbitos por SRAG registrados na segunda onda;
   - 20 de março (aproximadamente) será o dia com mais casos de SRAG registrados na segunda onda;
+  - 20 de maio (aproximadamente) será o dia com mais óbitos por SRAG registrados na segunda onda;
   - Em média, 9 de maio (aproximadamente) será o "pior dia" da segunda onda, considerando todos os fatores anteriores.
+  
+  
+  Estimativas atualizadas em 03/03/2021:
+  
+  - 17 de fevereiro (aproximadamente) foi o dia com mais casos de COVID-19 registrados na segunda onda;
+  - 19 de maio (aproximadamente) será o dia com mais óbitos por COVID-19 registrados na segunda onda;
+  - 27 de abril (aproximadamente) será o dia com mais casos de SRAG registrados na segunda onda;
+  - 22 de maio (aproximadamente) será o dia com mais óbitos por SRAG registrados na segunda onda;
+  - Em média, 22 de abril (aproximadamente) será o "pior dia" da segunda onda, considerando todos os fatores anteriores.
   
   *OBS: Considerando 13 de março de 2020 como o primeiro dia epidemiológico do Brasil*
   
@@ -112,6 +167,6 @@
   
 ## Referências:
 
-* **"MonitoraCovid-19"** https://bigdata-covid19.icict.fiocruz.br/; (Visualizado em: 03/01/2021) (Daqui foram obtidos os *datasets* utilizados.
+* **"MonitoraCovid-19"** https://bigdata-covid19.icict.fiocruz.br/; (Visualizado em: 03/01/2021 nos primeiros ajustes e 03/03/2021 nos ajustes maisrecentes) (Daqui foram obtidos os *datasets* utilizados.
 
 * **"InfoGripe"** http://info.gripe.fiocruz.br/; (Visualizado em: 16/05/2020) (Onde os dados são divulgados originalmente. Daqui é possível obter *datasets* mais robustos com registros até o ano de 2009).
