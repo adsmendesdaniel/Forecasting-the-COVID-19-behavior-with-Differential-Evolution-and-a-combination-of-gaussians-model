@@ -24,6 +24,7 @@
  <img src="casos_covid_ajuste.png" align=middle/>
  </p>
  
+ 
  Ajuste atualizado em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
  
  <p align="center">
