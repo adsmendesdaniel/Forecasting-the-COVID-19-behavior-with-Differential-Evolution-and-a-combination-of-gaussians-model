@@ -141,7 +141,7 @@
   
   Em nosso modelo, o parâmetro &beta;<sub>i</sub> representa o centro do máximo de cada curva gaussiana, assim, podemos ver que, segundo nossa estimativa:
   
-  Estimativas feitas em 03/03/2021:
+  Estimativas feitas em 03/01/2021:
   
   - 13 de abril (aproximadamente) será o dia com mais casos de COVID-19 registrados na segunda onda;
   - 12 de julho (aproximadamente) será o dia com mais óbitos por COVID-19 registrados na segunda onda;
