@@ -6,7 +6,7 @@
 
   Análise de datasets contendo séries temporais de casos e óbitos registrados de Covid-19 e casos e óbitos por SRAG (síndrome respiratória aguda grave) utilizando Evolução Diferencial e combinação de ondas de distribuição gaussiana na previsão do comportamento da segunda onda de COVID-19 no Brasil.
 
-*Atenção:* Estou trabalhando em modelos mais precisos, e não irei mais atualizar este repositório. Novo repositório com um modelo mais preciso: https://github.com/adsmendesdaniel/Forecasting-the-COVID-19-behavior-with-Differential-Evolution-and-a-Maxwell-Boltzmann-like-model
+***Atenção:*** Estou trabalhando em modelos mais precisos, e não irei mais atualizar este repositório. Novo repositório com um modelo mais preciso: https://github.com/adsmendesdaniel/Forecasting-the-COVID-19-behavior-with-Differential-Evolution-and-a-Maxwell-Boltzmann-like-model
 
 ## Sobre ED, Gaussianas e COVID-19:
 
