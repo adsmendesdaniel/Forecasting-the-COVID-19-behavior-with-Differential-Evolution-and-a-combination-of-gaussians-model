@@ -1,8 +1,12 @@
 # Prevendo o comportamento da segunda onda de COVID-19 no Brasil utilizando Evolução Diferencial e combinação de pacotes de onda Gaussianos.
 
-  *Analysis of time series datasets of recorded cases and deaths from COVID-19 and cases and deaths from SARS (severe acute respiratory syndrome) using Differential Evolution and the combination of Gaussian wave packets to forecast the behavior of the second wave of COVID-19 in Brazil.*
+  *Analysis of time series datasets of recorded cases and deaths from COVID-19 and cases and deaths from SARS (severe acute respiratory syndrome) using Differential Evolution and the combination of Gaussian distribution waves to forecast the behavior of the second wave of COVID-19 in Brazil. *
+ 
+***Atenção:*** *I'm currently working on more accurate models, so, I wont update this repository any more. New repository with a more accurate model: https://github.com/adsmendesdaniel/Forecasting-the-COVID-19-behavior-with-Differential-Evolution-and-a-Maxwell-Boltzmann-like-model*
 
-  Análise de datasets contendo séries temporais de casos e óbitos registrados de Covid-19 e casos e óbitos por SRAG (síndrome respiratória aguda grave) utilizando Evolução Diferencial e combinação de pacotes de onda gaussianos na previsão do comportamento da segunda onda de COVID-19 no Brasil.
+  Análise de datasets contendo séries temporais de casos e óbitos registrados de Covid-19 e casos e óbitos por SRAG (síndrome respiratória aguda grave) utilizando Evolução Diferencial e combinação de ondas de distribuição gaussiana na previsão do comportamento da segunda onda de COVID-19 no Brasil.
+
+*Atenção:* Estou trabalhando em modelos mais precisos, e não irei mais atualizar este repositório. Novo repositório com um modelo mais preciso: https://github.com/adsmendesdaniel/Forecasting-the-COVID-19-behavior-with-Differential-Evolution-and-a-Maxwell-Boltzmann-like-model
 
 ## Sobre ED, Gaussianas e COVID-19:
 
